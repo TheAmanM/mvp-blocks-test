@@ -8,19 +8,20 @@ export default function CTA3() {
           <div className="relative z-10 grid gap-0 lg:grid-cols-2">
             <div className="p-8 md:p-12 lg:p-16">
               <div className="mb-6 inline-block rounded-full border border-border/30 bg-background px-4 py-1 text-primary">
-                TAKE ACTION NOW
+                SHIP WITH CONFIDENCE
               </div>
               <h2 className="mb-6 text-3xl font-bold tracking-tight text-card-foreground md:text-4xl lg:text-5xl">
                 Ready to{" "}
                 <span className="bg-gradient-to-r from-chart-5 to-primary bg-clip-text text-transparent">
-                  Transform
+                  Future-Proof
                 </span>{" "}
-                Your Marketing?
+                Your Codebase?
               </h2>
               <p className="mb-8 text-lg text-muted-foreground">
-                96% of visitors leave websites without taking action. Our
-                conversion-optimized funnels recapture those lost opportunities
-                and turn them into predictable revenue.
+                Every commit made with an outdated AI tool silently injects
+                technical debt and security risks into your project. DocDev
+                stops this decay at the source, ensuring every line of code is
+                built on the latest, most secure standards.
               </p>
 
               <div className="space-y-6">
@@ -49,10 +50,11 @@ export default function CTA3() {
                   </div>
                   <div>
                     <h3 className="font-heading text-lg font-bold text-card-foreground">
-                      Free Strategy Session
+                      Code with Confidence
                     </h3>
                     <p className="text-muted-foreground">
-                      No obligation, just pure value for your business.
+                      Generate code knowing it's based on the latest docs, not
+                      a stale model.
                     </p>
                   </div>
                 </div>
@@ -82,11 +84,11 @@ export default function CTA3() {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-card-foreground">
-                      Custom Funnel Blueprint
+                      Eliminate Security Risks
                     </h3>
                     <p className="text-muted-foreground">
-                      Walk away with actionable insights regardless of who you
-                      work with.
+                      Automatically avoid deprecated patterns and known
+                      vulnerabilities before they're committed.
                     </p>
                   </div>
                 </div>
@@ -116,11 +118,11 @@ export default function CTA3() {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-card-foreground">
-                      ROI Projection
+                      Accelerate Your Workflow
                     </h3>
                     <p className="text-muted-foreground">
-                      See the potential impact on your revenue before you
-                      invest.
+                      Spend less time on documentation and more time building
+                      features that matter.
                     </p>
                   </div>
                 </div>
@@ -131,10 +133,10 @@ export default function CTA3() {
               <div className="absolute right-0 top-0 h-full w-full opacity-10"></div>
               <div className="relative z-10">
                 <h3 className="mb-6 text-2xl font-bold tracking-tight md:text-3xl">
-                  Don't Let Another Day Pass With A Leaky Marketing Funnel
+                  Stop Committing Yesterday's Bugs
                 </h3>
                 <p className="mb-8 text-primary-foreground/80">
-                  Every day with an underperforming funnel is costing you:
+                  Every day you code without live data is costing your team:
                 </p>
 
                 <div className="space-y-6">
@@ -143,7 +145,7 @@ export default function CTA3() {
                       1
                     </div>
                     <p className="text-lg">
-                      Qualified leads that never convert
+                      Critical security flaws that have already been patched.
                     </p>
                   </div>
 
@@ -151,7 +153,9 @@ export default function CTA3() {
                     <div className="mr-4 flex h-10 w-10 items-center justify-center rounded-full border-2 border-primary-foreground text-lg font-bold">
                       2
                     </div>
-                    <p className="text-lg">Revenue that goes to competitors</p>
+                    <p className="text-lg">
+                      Hours wasted on debugging deprecated functions.
+                    </p>
                   </div>
 
                   <div className="flex items-center">
@@ -159,18 +163,19 @@ export default function CTA3() {
                       3
                     </div>
                     <p className="text-lg">
-                      Wasted ad spend on traffic that doesn't convert
+                      Frustrating bugs that get shipped to production.
                     </p>
                   </div>
                 </div>
 
                 <div className="mt-10 rounded-xl bg-primary-foreground/10 p-6 backdrop-blur">
                   <p className="text-lg font-medium">
-                    "We increased our conversion rate from 1.7% to 6.3% in just
-                    31 days after implementing Freedom Funnels' system."
+                    "We cut down our pre-deployment bug hunt by over 50%.
+                    DocDev caught three major issues related to outdated
+                    Next.js APIs that our other tools completely missed."
                   </p>
                   <p className="mt-3 font-medium text-primary-foreground/70">
-                    — Ryan Miller, CEO, Apex Solutions
+                    — Sarah Chen, Lead Engineer, SynthoCorp
                   </p>
                 </div>
               </div>
