@@ -227,28 +227,28 @@ export default function MinimalHero({
             style={{ color: colors[200] }}
           >
             <span className="word" data-delay="0">
-              Welcome
+              DocDev
             </span>
             <span className="word" data-delay="200">
-              to
+              —
             </span>
             <span className="word" data-delay="400">
               <b>StackPilot</b>
             </span>
             <span className="word" data-delay="600">
-              — 
+              AI
             </span>
             <span className="word" data-delay="800">
-              Powering
+              coding,
             </span>
             <span className="word" data-delay="1000">
-              your
+              built
             </span>
             <span className="word" data-delay="1200">
-              digital
+              on
             </span>
             <span className="word" data-delay="1400">
-              transformation.
+              truth.
             </span>
           </h2>
           <div
@@ -267,61 +267,49 @@ export default function MinimalHero({
           >
             <div className="mb-4 md:mb-6">
               <span className="word" data-delay="1600">
-                Supercharge
-              </span>
-              <span className="word" data-delay="1750">
-                your
-              </span>
-              <span className="word" data-delay="1900">
-                productivity
-              </span>
-              <span className="word" data-delay="2050">
-                with
-              </span>
-              <span className="word" data-delay="2200">
-                AI-driven
-              </span>
-              <span className="word" data-delay="2350">
-                automation.
-              </span>
+  Stop
+</span>
+<span className="word" data-delay="1750">
+  debugging
+</span>
+<span className="word" data-delay="1900">
+  your
+</span>
+<span className="word" data-delay="2050">
+  AI.
+</span>
             </div>
             <div
               className="text-2xl md:text-3xl lg:text-4xl font-thin leading-relaxed"
               style={{ color: colors[200] }}
             >
-              <span className="word" data-delay="2600">
-                Integrate,
-              </span>
-              <span className="word" data-delay="2750">
-                orchestrate,
-              </span>
-              <span className="word" data-delay="2900">
-                and
-              </span>
-              <span className="word" data-delay="3050">
-                scale
-              </span>
-              <span className="word" data-delay="3200">
-                your
-              </span>
-              <span className="word" data-delay="3350">
-                business
-              </span>
-              <span className="word" data-delay="3500">
-                — all
-              </span>
-              <span className="word" data-delay="3650">
-                in
-              </span>
-              <span className="word" data-delay="3800">
-                one
-              </span>
-              <span className="word" data-delay="3950">
-                secure
-              </span>
-              <span className="word" data-delay="4100">
-                platform.
-              </span>
+              <span className="word" data-delay="2200">
+  Generate,
+</span>
+<span className="word" data-delay="2350">
+  validate,
+</span>
+<span className="word" data-delay="2500">
+  and
+</span>
+<span className="word" data-delay="2650">
+  commit
+</span>
+<span className="word" data-delay="2800">
+  code
+</span>
+<span className="word" data-delay="2950">
+  you
+</span>
+<span className="word" data-delay="3100">
+  can
+</span>
+<span className="word" data-delay="3250">
+  actually
+</span>
+<span className="word" data-delay="3400">
+  trust.
+</span>
             </div>
           </h1>
           <div
@@ -354,24 +342,24 @@ export default function MinimalHero({
             className="text-xs md:text-sm font-mono font-light uppercase tracking-[0.2em] opacity-80"
             style={{ color: colors[200] }}
           >
-            <span className="word" data-delay="4400">
-              Real-time
-            </span>
-            <span className="word" data-delay="4550">
-              analytics,
-            </span>
-            <span className="word" data-delay="4700">
-              seamless
-            </span>
-            <span className="word" data-delay="4850">
-              integrations,
-            </span>
-            <span className="word" data-delay="5000">
-              enterprise-grade
-            </span>
-            <span className="word" data-delay="5150">
-              security.
-            </span>
+           <span className="word" data-delay="4000">
+  Always-current
+</span>
+<span className="word" data-delay="4150">
+  docs.
+</span>
+<span className="word" data-delay="4300">
+  Proactive
+</span>
+<span className="word" data-delay="4450">
+  security.
+</span>
+<span className="word" data-delay="4600">
+  One-click
+</span>
+<span className="word" data-delay="4750">
+  trust.
+</span>
           </h2>
           <div
             className="mt-6 flex justify-center space-x-4 opacity-0"
