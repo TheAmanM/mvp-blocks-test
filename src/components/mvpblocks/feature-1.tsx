@@ -1,44 +1,45 @@
 import {
-  Code,
-  Terminal,
-  Paintbrush,
-  Rocket,
-  Book,
-  PlusCircle,
+  BookOpenCheck,
+  ShieldCheck,
+  GitCompareArrows,
+  WandSparkles,
+  Library,
+  Github,
 } from 'lucide-react';
 
 const features = [
   {
-    icon: <Code className="h-6 w-6" />,
-    title: 'Developer-Friendly',
-    desc: 'Tailored for developers to create and iterate fast, with minimal overhead and maximum flexibility.',
+    icon: <BookOpenCheck className="h-6 w-6" />,
+    title: 'Live Documentation Engine',
+    desc: 'Our vector database continuously ingests the latest official docs from major frameworks, ensuring your AI assistant is never out of sync with reality.',
   },
   {
-    icon: <Terminal className="h-6 w-6" />,
-    title: 'CLI Support',
-    desc: 'Command-line interface support for seamless development and workflow integration.',
+    icon: <ShieldCheck className="h-6 w-6" />,
+    title: 'Proactive Security Shield',
+    desc: 'DocDev automatically detects when generated code uses vulnerable patterns or deprecated versions, shielding your projects from known threats before they\'re committed.',
   },
   {
-    icon: <Paintbrush className="h-6 w-6" />,
-    title: 'Easily Customizable',
-    desc: 'Every block is built to be editable. From layout to logic, style to structure—make it your own.',
+    icon: <GitCompareArrows className="h-6 w-6" />,
+    title: 'Integrated Diff Viewer',
+    desc: 'Never guess what the AI changed. See every addition and deletion in a clear, interactive diff right inside your editor. Accept with confidence, reject with a click.',
   },
   {
-    icon: <Rocket className="h-6 w-6" />,
-    title: 'v0 Support',
-    desc: 'Launch fast with confidence. Perfect for MVPs, prototypes, and weekend projects.',
+    icon: <WandSparkles className="h-6 w-6" />,
+    title: 'Precision Code Generation',
+    desc: 'Because we reference the source of truth, DocDev generates code with higher accuracy and context-awareness, reducing the time you spend refactoring and debugging.',
   },
   {
-    icon: <Book className="h-6 w-6" />,
-    title: 'Full Documentation',
-    desc: 'Comprehensive documentation to understand every feature and maximize your development experience.',
+    icon: <Library className="h-6 w-6" />,
+    title: 'Broad Framework Support',
+    desc: 'From Next.js and Tailwind CSS to the most popular libraries in your stack. Our support grows with the ecosystem, keeping you at the cutting edge.',
   },
   {
-    icon: <PlusCircle className="h-6 w-6" />,
-    title: 'Contribute Yours',
-    desc: 'Add your own blocks to the library and become part of the MVPBlocks community.',
+    icon: <Github className="h-6 w-6" />,
+    title: 'Open Source & Community-Driven',
+    desc: 'DocDev is built for the community, by the community. Contribute on GitHub and help shape the future of reliable AI-powered development.',
   },
 ];
+
 export default function Feature1() {
   return (
     <section className="relative py-14">
@@ -46,11 +47,10 @@ export default function Feature1() {
         <div className="relative mx-auto max-w-2xl sm:text-center">
           <div className="relative z-10">
             <h3 className="font-geist mt-4 text-3xl font-normal tracking-tighter sm:text-4xl md:text-5xl">
-              Let’s help build your MVP
+              Code at the speed of now
             </h3>
             <p className="font-geist mt-3 text-foreground/60">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              congue, nisl eget molestie varius, enim ex faucibus purus.
+              AI coding assistants are powerful, but they operate from a frozen past. DocDev breaks this cycle by grounding every line of generated code in live, current documentation. Stop wasting time on deprecated functions and chasing down phantom bugs. This is how modern development was meant to be: fast, accurate, and secure.
             </p>
           </div>
           <div
