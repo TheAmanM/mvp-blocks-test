@@ -10,64 +10,64 @@ interface FaqItem {
   id: string;
   question: string;
   answer: string;
-  category: "general" | "pricing" | "technical" | "support";
+  category: "general" | "technical" | "support";
 }
 
 const faqItems: FaqItem[] = [
   {
     id: "1",
-    question: "What is MVPBlocks?",
+    question: "What is DocDev?",
     answer:
-      "MVPBlocks is a collection of ready-to-use UI components built with Next.js and Tailwind CSS. It helps developers quickly build beautiful, responsive websites without starting from scratch.",
+      "DocDev is a free, open-source VS Code extension that acts as an AI coding assistant. Its unique feature is that it generates code based on a live, continuously updated database of official documentation, ensuring the code is always modern, correct, and secure.",
     category: "general",
   },
   {
     id: "2",
-    question: "Is MVPBlocks free to use?",
+    question: "How is this different from GitHub Copilot or ChatGPT?",
     answer:
-      "Yes, MVPBlocks is completely free and open-source. You can use it for personal and commercial projects without any restrictions or attribution requirements.",
+      "Standard AI tools are trained on static, often outdated, public code repositories. They frequently generate code using deprecated functions or vulnerable patterns. DocDev solves this by querying a real-time vector database of the *latest* official documentation, guaranteeing accuracy and security.",
     category: "general",
   },
   {
     id: "3",
-    question: "Do I need to know Tailwind CSS to use MVPBlocks?",
+    question: "Is DocDev free to use?",
     answer:
-      "While having Tailwind CSS knowledge is helpful, it's not required. You can simply copy and paste our components into your project and make basic modifications without deep Tailwind expertise.",
-    category: "technical",
+      "Yes, DocDev is completely free and open-source, available on the VS Code Marketplace. We believe in providing powerful, reliable tools to the entire developer community.",
+    category: "general",
   },
   {
     id: "4",
-    question: "How do I install MVPBlocks?",
+    question: "How does the documentation database stay current?",
     answer:
-      "You don't need to install MVPBlocks as a package. Simply browse our component library, find the components you need, and copy the code into your project. Make sure you have the required dependencies installed.",
+      "We have an automated pipeline that monitors major package and framework repositories for new releases and documentation updates. As soon as a new version is published, our system ingests and processes the changes into the vector database, making them immediately available to the extension.",
     category: "technical",
   },
   {
     id: "5",
-    question: "Can I customize the components?",
+    question: "Which frameworks and languages do you support?",
     answer:
-      "Absolutely! All components are built with customization in mind. You can modify colors, spacing, typography, and more using Tailwind classes or by editing the component code directly.",
+      "We launched with a focus on the most dynamic web development ecosystems, including Next.js, React, and Tailwind CSS. We are actively expanding support for other popular languages and frameworks based on community feedback. Check our GitHub repository for the most current list.",
     category: "technical",
   },
   {
     id: "6",
-    question: "Do MVPBlocks components work with dark mode?",
+    question: "Will DocDev overwrite my code without permission?",
     answer:
-      "Yes, all MVPBlocks components are designed to work seamlessly with both light and dark modes. They automatically adapt to your site's theme settings.",
+      "Absolutely not. Your code is never changed automatically. Every suggestion from DocDev is presented in a clear 'diff' view within VS Code. You have full control to review the changes and must explicitly click 'Accept' to apply them.",
     category: "technical",
   },
   {
     id: "7",
-    question: "How often are new components added?",
+    question: "How can I contribute to the project?",
     answer:
-      "We regularly add new components to the library. Our goal is to provide a comprehensive set of components for all common UI patterns and website sections.",
-    category: "general",
+      "DocDev is a community-driven project. We welcome contributions of all kinds, from improving our documentation parsers to adding support for new languages or fixing bugs. Please see our CONTRIBUTING.md file in our GitHub repository for guidelines.",
+    category: "support",
   },
   {
     id: "8",
-    question: "How can I contribute to MVPBlocks?",
+    question: "Where can I report a bug or suggest a feature?",
     answer:
-      "We welcome contributions! You can contribute by creating new components, improving existing ones, fixing bugs, or enhancing documentation. Check our GitHub repository for contribution guidelines.",
+      "We'd love to hear from you! The best place to report bugs or suggest new features is by opening an issue on our official GitHub Issues page. This helps us track feedback and prioritize development.",
     category: "support",
   },
 ];
@@ -76,7 +76,6 @@ const categories = [
   { id: "all", label: "All" },
   { id: "general", label: "General" },
   { id: "technical", label: "Technical" },
-  { id: "pricing", label: "Pricing" },
   { id: "support", label: "Support" },
 ];
 
