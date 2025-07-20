@@ -71,9 +71,9 @@ export default function Feature1() {
             {features.map((item, idx) => (
               <li
                 key={idx}
-                className="transform-gpu space-y-3 rounded-xl border bg-transparent p-4 [box-shadow:0_-20px_80px_-20px_#ff7aa42f_inset]"
+                className="transform-gpu space-y-3 rounded-xl border bg-transparent p-4 [box-shadow:0_-20px_80px_-20px_#3b82f62f_inset]"
               >
-                <div className="w-fit transform-gpu rounded-full border p-4 text-primary [box-shadow:0_-20px_80px_-20px_#ff7aa43f_inset] dark:[box-shadow:0_-20px_80px_-20px_#ff7aa40f_inset]">
+                <div className="w-fit transform-gpu rounded-full border p-4 text-primary [box-shadow:0_-20px_80px_-20px_#3b82f63f_inset] dark:[box-shadow:0_-20px_80px_-20px_#ff7aa40f_inset]">
                   {item.icon}
                 </div>
                 <h4 className="font-geist text-lg font-bold tracking-tighter">

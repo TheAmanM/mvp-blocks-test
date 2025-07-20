@@ -23,8 +23,8 @@ interface TeamProps {
 // Default data
 const defaultMembers: TeamMember[] = [
   {
-    name: "Alex Morgan",
-    role: "Founder & CEO",
+    name: "Ahmed Abdul Jader",
+    role: "Motivator",
     bio: "10+ years of experience in product development and team leadership. Passionate about building products that make a difference.",
     imageUrl:
       "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=300&h=300&auto=format&fit=crop",

@@ -4,16 +4,16 @@ import { cn } from "@/lib/utils";
 import React, { useEffect, useRef } from "react";
 
 const colors = {
-  50: "#f8d0e0",
-  100: "#f0a1b2",
-  200: "#e17993",
-  300: "#d55174",
-  400: "#c63156",
-  500: "#b21738",
-  600: "#9c0f30",
-  700: "#7f0e2b",
-  800: "#660d24",
-  900: "#4f0a1e",
+  50: "#d0d8f8",
+  100: "#a1b2f0",
+  200: "#7993e1",
+  300: "#5174d5",
+  400: "#3156c6",
+  500: "#1738b2",
+  600: "#0f309c",
+  700: "#0e2b7f",
+  800: "#0d2466",
+  900: "#0a1e4f",
 };
 
 export default function MinimalHero({
@@ -267,49 +267,49 @@ export default function MinimalHero({
           >
             <div className="mb-4 md:mb-6">
               <span className="word" data-delay="1600">
-  Stop
-</span>
-<span className="word" data-delay="1750">
-  debugging
-</span>
-<span className="word" data-delay="1900">
-  your
-</span>
-<span className="word" data-delay="2050">
-  AI.
-</span>
+                Stop
+              </span>
+              <span className="word" data-delay="1750">
+                debugging
+              </span>
+              <span className="word" data-delay="1900">
+                your
+              </span>
+              <span className="word" data-delay="2050">
+                AI.
+              </span>
             </div>
             <div
               className="text-2xl md:text-3xl lg:text-4xl font-thin leading-relaxed"
               style={{ color: colors[200] }}
             >
               <span className="word" data-delay="2200">
-  Generate,
-</span>
-<span className="word" data-delay="2350">
-  validate,
-</span>
-<span className="word" data-delay="2500">
-  and
-</span>
-<span className="word" data-delay="2650">
-  commit
-</span>
-<span className="word" data-delay="2800">
-  code
-</span>
-<span className="word" data-delay="2950">
-  you
-</span>
-<span className="word" data-delay="3100">
-  can
-</span>
-<span className="word" data-delay="3250">
-  actually
-</span>
-<span className="word" data-delay="3400">
-  trust.
-</span>
+                Generate,
+              </span>
+              <span className="word" data-delay="2350">
+                validate,
+              </span>
+              <span className="word" data-delay="2500">
+                and
+              </span>
+              <span className="word" data-delay="2650">
+                commit
+              </span>
+              <span className="word" data-delay="2800">
+                code
+              </span>
+              <span className="word" data-delay="2950">
+                you
+              </span>
+              <span className="word" data-delay="3100">
+                can
+              </span>
+              <span className="word" data-delay="3250">
+                actually
+              </span>
+              <span className="word" data-delay="3400">
+                trust.
+              </span>
             </div>
           </h1>
           <div
@@ -342,24 +342,24 @@ export default function MinimalHero({
             className="text-xs md:text-sm font-mono font-light uppercase tracking-[0.2em] opacity-80"
             style={{ color: colors[200] }}
           >
-           <span className="word" data-delay="4000">
-  Always-current
-</span>
-<span className="word" data-delay="4150">
-  docs.
-</span>
-<span className="word" data-delay="4300">
-  Proactive
-</span>
-<span className="word" data-delay="4450">
-  security.
-</span>
-<span className="word" data-delay="4600">
-  One-click
-</span>
-<span className="word" data-delay="4750">
-  trust.
-</span>
+            <span className="word" data-delay="4000">
+              Always-current
+            </span>
+            <span className="word" data-delay="4150">
+              docs.
+            </span>
+            <span className="word" data-delay="4300">
+              Proactive
+            </span>
+            <span className="word" data-delay="4450">
+              security.
+            </span>
+            <span className="word" data-delay="4600">
+              One-click
+            </span>
+            <span className="word" data-delay="4750">
+              trust.
+            </span>
           </h2>
           <div
             className="mt-6 flex justify-center space-x-4 opacity-0"
