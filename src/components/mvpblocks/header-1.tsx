@@ -7,6 +7,8 @@ import Link from "next/link";
 import { useTheme } from "next-themes";
 import { cn } from "@/lib/utils";
 
+import logoImage from "../../../public/logo.svg";
+
 interface NavItem {
   name: string;
   href: string;
@@ -15,28 +17,10 @@ interface NavItem {
 }
 
 const navItems: NavItem[] = [
-  { name: "Home", href: "/" },
-  { name: "Features", href: "/features" },
-  {
-    name: "Products",
-    href: "/products",
-    hasDropdown: true,
-    dropdownItems: [
-      {
-        name: "Analytics",
-        href: "/analytics",
-        description: "Track your metrics",
-      },
-      {
-        name: "Dashboard",
-        href: "/dashboard",
-        description: "Manage your data",
-      },
-      { name: "Reports", href: "/reports", description: "Generate insights" },
-    ],
-  },
-  { name: "Pricing", href: "/pricing" },
-  { name: "About", href: "/about" },
+  { name: "Home", href: "#" },
+  { name: "Features", href: "#features" },
+  { name: "Team", href: "#team" },
+  { name: "FAQ", href: "#faq" },
 ];
 
 export default function Header1({
@@ -79,6 +63,7 @@ export default function Header1({
 
   return (
     <motion.header
+      id="#"
       className={cn(
         "fixed left-0 right-0 top-0 z-50 transition-all duration-300",
         className
@@ -106,12 +91,9 @@ export default function Header1({
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
             <Link href="/" className="flex items-center space-x-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-rose-500 to-rose-700">
-                <Sparkles className="h-5 w-5 text-white" />
+              <div className="flex w-36 items-center justify-center">
+                <img src={logoImage.src} alt="Logo" />
               </div>
-              <span className="bg-gradient-to-r from-rose-500 to-rose-700 bg-clip-text text-xl font-bold text-transparent">
-                Acme Inc.
-              </span>
             </Link>
           </motion.div>
 
@@ -127,7 +109,7 @@ export default function Header1({
               >
                 <Link
                   href={item.href}
-                  className="flex items-center space-x-1 font-medium text-foreground transition-colors duration-200 hover:text-rose-500"
+                  className="flex items-center space-x-1 font-medium text-foreground transition-colors duration-200 hover:text-primary-1"
                 >
                   <span>{item.name}</span>
                   {item.hasDropdown && (
@@ -171,16 +153,10 @@ export default function Header1({
           </nav>
 
           <div className="hidden items-center space-x-4 lg:flex">
-            <Link
-              href="/login"
-              className="font-medium text-foreground transition-colors duration-200 hover:text-rose-500"
-            >
-              Sign In
-            </Link>
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Link
                 href="/signup"
-                className="inline-flex items-center space-x-2 rounded-full bg-gradient-to-r from-rose-500 to-rose-700 px-6 py-2.5 font-medium text-white transition-all duration-200 hover:shadow-lg"
+                className="inline-flex items-center space-x-2 rounded-full bg-gradient-to-r from-primary-1 to-primary-2 px-6 py-2.5 font-medium text-white transition-all duration-200 hover:shadow-lg"
               >
                 <span>Get Started</span>
                 <ArrowRight className="h-4 w-4" />
@@ -224,15 +200,8 @@ export default function Header1({
                 ))}
                 <div className="space-y-2 px-4 py-2">
                   <Link
-                    href="/login"
-                    className="block w-full rounded-lg py-2.5 text-center font-medium text-foreground transition-colors duration-200 hover:bg-muted"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    Sign In
-                  </Link>
-                  <Link
                     href="/signup"
-                    className="block w-full rounded-lg bg-gradient-to-r from-rose-500 to-rose-700 py-2.5 text-center font-medium text-white transition-all duration-200 hover:shadow-lg"
+                    className="block w-full rounded-lg bg-gradient-to-r from-primary-1 to-primary-2 py-2.5 text-center font-medium text-white transition-all duration-200 hover:shadow-lg"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     Get Started

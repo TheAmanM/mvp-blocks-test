@@ -15,7 +15,7 @@ export default function Home() {
       <Header1 />
       <MinimalHero className="mt-8" />
       <Feature1 />
-      <TestimonialsCarousel />
+      {/* <TestimonialsCarousel /> */}
       <Team1 />
       <Faq2 />
       <CTA3 />

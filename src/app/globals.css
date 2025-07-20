@@ -41,6 +41,9 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+
+  --color-primary-1: var(--color-primary-1);
+  --color-primary-2: var(--color-primary-2);
 }
 
 :root {
@@ -76,6 +79,9 @@
   --sidebar-accent-foreground: hsl(240 5.9% 10%);
   --sidebar-border: hsl(220 13% 91%);
   --sidebar-ring: hsl(217.2 91.2% 59.8%);
+
+  --color-primary-1: #3b82f6;
+  --color-primary-2: #1d4ed8;
 }
 
 .dark {
@@ -110,6 +116,9 @@
   --sidebar-accent-foreground: hsl(240 4.8% 95.9%);
   --sidebar-border: hsl(240 3.7% 15.9%);
   --sidebar-ring: hsl(217.2 91.2% 59.8%);
+
+  --color-primary-1: #3b82f6;
+  --color-primary-2: #1d4ed8;
 }
 
 @layer base {
