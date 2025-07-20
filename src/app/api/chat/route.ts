@@ -26,13 +26,13 @@ export async function POST(req: Request) {
 
   const contextString =
     trimmedChunks.length > 0
-      ? `You are DevDoc, an AI-powered developer assistant built into the VS Code IDE. You help developers by answering questions based on real project documentation, codebase content, and package dependencies embedded into your vector database.
+      ? `You are DevDoc, an AI-powered developer assistant inside VS Code. Use the following context from the user's codebase and documentation to help answer their question. Prefer using the context when it's relevant, but you're allowed to reason, infer, or generate helpful code when context is missing.
 
-Use only the following retrieved context to answer accurately and avoid hallucination. If the answer is not in the context, say so.
+If you're unsure, say you're making an educated guess. Always be useful and developer-oriented.
 
 Context:
 ${trimmedChunks.map((c) => `- ${c.name}`).join("\n")}`
-      : `You are DevDoc, an AI-powered developer assistant inside VS Code. No relevant context was found in the embedded knowledge base. Ask the user to clarify or rephrase their question.`;
+      : `You are DevDoc, an AI-powered developer assistant inside VS Code. No relevant context was found in the user's embedded documentation or code. Do your best to help based on general programming knowledge, and clearly indicate when you're making assumptions or guesses.`;
 
   const contextMessage = {
     role: "system" as const,
