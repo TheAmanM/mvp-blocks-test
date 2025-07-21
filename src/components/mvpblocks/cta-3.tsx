@@ -1,4 +1,8 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function CTA3() {
   return (
@@ -53,8 +57,8 @@ export default function CTA3() {
                       Code with Confidence
                     </h3>
                     <p className="text-muted-foreground">
-                      Generate code knowing it's based on the latest docs, not
-                      a stale model.
+                      Generate code knowing it's based on the latest docs, not a
+                      stale model.
                     </p>
                   </div>
                 </div>
@@ -170,9 +174,9 @@ export default function CTA3() {
 
                 <div className="mt-10 rounded-xl bg-primary-foreground/10 p-6 backdrop-blur">
                   <p className="text-lg font-medium">
-                    "We cut down our pre-deployment bug hunt by over 50%.
-                    DocDev caught three major issues related to outdated
-                    Next.js APIs that our other tools completely missed."
+                    "We cut down our pre-deployment bug hunt by over 50%. DocDev
+                    caught three major issues related to outdated Next.js APIs
+                    that our other tools completely missed."
                   </p>
                   <p className="mt-3 font-medium text-primary-foreground/70">
                     — Sarah Chen, Lead Engineer, SynthoCorp
@@ -180,6 +184,19 @@ export default function CTA3() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="w-full mx-auto flex items-center justify-center mt-8">
+          <div className="items-center space-x-4 flex">
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <Link
+                href="/signup"
+                className="inline-flex items-center space-x-2 rounded-full bg-gradient-to-r from-primary-1 to-primary-2 px-6 py-2.5 font-medium text-white lg:px-8 lg:py-3.5 lg:text-lg  transition-all duration-200 hover:shadow-lg"
+              >
+                <span>Launch</span>
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </motion.div>
           </div>
         </div>
       </div>

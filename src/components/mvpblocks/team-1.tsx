@@ -82,7 +82,10 @@ export default function Team1({
   className,
 }: TeamProps) {
   return (
-    <section className={cn("mx-auto max-w-7xl py-16 md:py-24", className)}>
+    <section
+      id="team"
+      className={cn("mx-auto max-w-7xl py-16 md:py-24", className)}
+    >
       <div className="absolute left-0 top-0 h-96 w-96 rounded-full bg-primary/15 blur-3xl" />
       <div className="absolute right-0 top-0 h-96 w-96 rounded-full bg-primary/15 blur-3xl" />
       <div className="px-4 md:px-6 w-full">
