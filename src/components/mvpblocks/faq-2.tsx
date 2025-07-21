@@ -93,7 +93,7 @@ export default function Faq2() {
   };
 
   return (
-    <section className="bg-background py-16">
+    <section id="faq" className="bg-background py-16">
       <div className="container mx-auto max-w-6xl px-4 md:px-6">
         <div className="mb-12 flex flex-col items-center">
           <Badge
@@ -184,7 +184,7 @@ export default function Faq2() {
         </div>
 
         {/* Contact CTA */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.5 }}
@@ -199,7 +199,7 @@ export default function Faq2() {
           >
             Contact Support
           </a>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

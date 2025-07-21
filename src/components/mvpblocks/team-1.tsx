@@ -4,6 +4,11 @@ import { cn } from "@/lib/utils";
 import { GithubIcon, LinkedinIcon, TwitterIcon } from "lucide-react";
 import Link from "next/link";
 
+import ahmed from "@/assets/ahmed.jpeg";
+import aman from "@/assets/aman.jpeg";
+import hala from "@/assets/hala.jpeg";
+import mahad from "@/assets/mahad.jpeg";
+
 interface TeamMember {
   name: string;
   role: string;
@@ -23,12 +28,11 @@ interface TeamProps {
 // Default data
 const defaultMembers: TeamMember[] = [
   {
-    name: "Alex Morgan",
-    role: "Founder & CEO",
+    name: "Ahmed Abdul Jader",
+    role: "Motivator",
     bio: "10+ years of experience in product development and team leadership. Passionate about building products that make a difference.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=300&h=300&auto=format&fit=crop",
-    location: "San Francisco, CA",
+    imageUrl: ahmed.src,
+    location: "Toronto, ON",
     socialLinks: [
       { platform: "twitter", url: "https://twitter.com" },
       { platform: "github", url: "https://github.com" },
@@ -36,36 +40,34 @@ const defaultMembers: TeamMember[] = [
     ],
   },
   {
-    name: "Sarah Chen",
-    role: "Lead Designer",
+    name: "Aman Meherally",
+    role: "Frontend Designer & Developer",
     bio: "Award-winning designer with a passion for creating beautiful, functional interfaces that delight users.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=300&h=300&auto=format&fit=crop",
-    location: "New York, NY",
+    imageUrl: aman.src,
+    location: "Toronto, ON",
     socialLinks: [
       { platform: "twitter", url: "https://twitter.com" },
       { platform: "linkedin", url: "https://linkedin.com" },
     ],
   },
   {
-    name: "Marcus Johnson",
+    name: "Hala Alshareef",
     role: "Senior Developer",
     bio: "Full-stack developer with expertise in React, Node.js, and cloud architecture. Building scalable solutions for complex problems.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=300&h=300&auto=format&fit=crop",
-    location: "Berlin, Germany",
+    imageUrl: hala.src,
+
+    location: "Toronto, ON",
     socialLinks: [
       { platform: "github", url: "https://github.com" },
       { platform: "linkedin", url: "https://linkedin.com" },
     ],
   },
   {
-    name: "Priya Patel",
+    name: "Mahad Hasan",
     role: "Product Manager",
-    bio: "Strategic thinker with a track record of launching successful products that users love and businesses value.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=300&h=300&auto=format&fit=crop",
-    location: "London, UK",
+    bio: "Strategic thinker with a track record of launching successful products that users love and businesses value. ",
+    imageUrl: mahad.src,
+    location: "Toronto, ON",
     socialLinks: [
       { platform: "twitter", url: "https://twitter.com" },
       { platform: "linkedin", url: "https://linkedin.com" },
@@ -80,10 +82,13 @@ export default function Team1({
   className,
 }: TeamProps) {
   return (
-    <section className={cn("mx-auto max-w-7xl py-16 md:py-24", className)}>
+    <section
+      id="team"
+      className={cn("mx-auto max-w-7xl py-16 md:py-24", className)}
+    >
       <div className="absolute left-0 top-0 h-96 w-96 rounded-full bg-primary/15 blur-3xl" />
       <div className="absolute right-0 top-0 h-96 w-96 rounded-full bg-primary/15 blur-3xl" />
-      <div className="container px-4 md:px-6">
+      <div className="px-4 md:px-6 w-full">
         <div className="mx-auto mb-16 max-w-3xl text-center">
           <h2 className="mb-4 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
             {title}
@@ -93,7 +98,7 @@ export default function Team1({
           </p>
         </div>
 
-        <div className="flex flex-wrap items-center justify-center gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-[fit-content(50%)_fit-content(50%)] lg:grid-cols-[fit-content(100%)_fit-content(100%)] place-items-center gap-8 lg:gap-16 w-full justify-center">
           {members.map((member) => (
             <TeamMemberCard key={member.name} member={member} />
           ))}
@@ -106,13 +111,13 @@ export default function Team1({
 // Team member card component
 function TeamMemberCard({ member }: { member: TeamMember }) {
   return (
-    <div className="opacity-100 hover:opacity-75 transition-opacity group h-[420px] w-96 overflow-hidden rounded-xl bg-card shadow-sm">
-      <div className="relative h-[200px] w-full overflow-hidden">
+    <div className="opacity-100 hover:opacity-75 transition-opacity group h-[540px] w-96 overflow-hidden rounded-xl bg-card shadow-sm">
+      <div className="relative aspect-[5/4] w-full overflow-hidden">
         <img
           src={member.imageUrl}
           alt={member.name}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-          className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+          className="object-cover absolute top-1/2 -translate-y-1/2 transition-transform duration-500 group-hover:scale-105"
         />
       </div>
 
