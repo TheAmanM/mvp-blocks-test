@@ -50,7 +50,7 @@ export default function MinimalHero({
     // Word hover effects
     words.forEach((word) => {
       word.addEventListener("mouseenter", () => {
-        word.style.textShadow = "0 0 20px rgba(200, 180, 160, 0.5)";
+        word.style.textShadow = "0 0 20px var(--primary)";
       });
       word.addEventListener("mouseleave", () => {
         word.style.textShadow = "none";
@@ -65,7 +65,7 @@ export default function MinimalHero({
       ripple.style.top = e.clientY + "px";
       ripple.style.width = "4px";
       ripple.style.height = "4px";
-      ripple.style.background = "rgba(200, 180, 160, 0.6)";
+      ripple.style.background = "var(--primary)";
       ripple.style.borderRadius = "50%";
       ripple.style.transform = "translate(-50%, -50%)";
       ripple.style.pointerEvents = "none";
@@ -102,7 +102,7 @@ export default function MinimalHero({
   return (
     <div
       className={cn(
-        "min-h-screen text-[#e6e1d7] font-primary overflow-hidden relative w-full",
+        "min-h-screen text-white font-primary overflow-hidden relative w-full",
         className
       )}
       {...props}
@@ -121,7 +121,7 @@ export default function MinimalHero({
             <path
               d="M 60 0 L 0 0 0 60"
               fill="none"
-              stroke="rgba(200,180,160,0.08)"
+              stroke="white"
               strokeWidth="0.5"
             />
           </pattern>

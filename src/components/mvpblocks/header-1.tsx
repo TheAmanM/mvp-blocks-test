@@ -8,6 +8,7 @@ import { useTheme } from "next-themes";
 import { cn } from "@/lib/utils";
 
 import logoImage from "../../../public/logo.svg";
+import { Spotlight } from "../ui/spotlight";
 
 interface NavItem {
   name: string;
@@ -83,6 +84,8 @@ export default function Header1({
       }}
       {...props}
     >
+      <Spotlight />
+
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between lg:h-20">
           <motion.div
@@ -97,7 +100,7 @@ export default function Header1({
             </Link>
           </motion.div>
 
-          <nav className="hidden items-center space-x-8 lg:flex">
+          <nav className="hidden items-center space-x-12 lg:flex">
             {navItems.map((item) => (
               <div
                 key={item.name}
@@ -158,7 +161,7 @@ export default function Header1({
                 href="/signup"
                 className="inline-flex items-center space-x-2 rounded-full bg-gradient-to-r from-primary-1 to-primary-2 px-6 py-2.5 font-medium text-white transition-all duration-200 hover:shadow-lg"
               >
-                <span>Get Started</span>
+                <span>Launch</span>
                 <ArrowRight className="h-4 w-4" />
               </Link>
             </motion.div>
@@ -204,7 +207,7 @@ export default function Header1({
                     className="block w-full rounded-lg bg-gradient-to-r from-primary-1 to-primary-2 py-2.5 text-center font-medium text-white transition-all duration-200 hover:shadow-lg"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
-                    Get Started
+                    Launch
                   </Link>
                 </div>
               </div>

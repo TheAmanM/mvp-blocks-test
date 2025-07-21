@@ -3,6 +3,7 @@
 import { cn } from "@/lib/utils";
 import { GithubIcon, LinkedinIcon, TwitterIcon } from "lucide-react";
 import Link from "next/link";
+import { Spotlight } from "../ui/spotlight";
 
 interface TeamMember {
   name: string;
