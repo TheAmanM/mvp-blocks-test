@@ -190,10 +190,11 @@ export default function CTA3() {
           <div className="items-center space-x-4 flex">
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Link
-                href="/signup"
+                target="_blank"
+                href="https://marketplace.visualstudio.com/items/?itemName=dev-doc.dev-doc"
                 className="inline-flex items-center space-x-2 rounded-full bg-gradient-to-r from-primary-1 to-primary-2 px-6 py-2.5 font-medium text-white lg:px-8 lg:py-3.5 lg:text-lg  transition-all duration-200 hover:shadow-lg"
               >
-                <span>Launch</span>
+                <span>Get Extension</span>
                 <ArrowRight className="h-4 w-4" />
               </Link>
             </motion.div>
