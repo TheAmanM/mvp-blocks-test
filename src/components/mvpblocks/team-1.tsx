@@ -42,12 +42,13 @@ const defaultMembers: TeamMember[] = [
   {
     name: "Aman Meherally",
     role: "Frontend Designer & Developer",
-    bio: "Award-winning designer with a passion for creating beautiful, functional interfaces that delight users.",
+    bio: "Award-winning designer with a passion for creating beautiful, intuitive and functional user interfacess.",
     imageUrl: aman.src,
     location: "Toronto, ON",
     socialLinks: [
       { platform: "linkedin", url: "https://www.linkedin.com/in/aman-meherally/" },
-      { platform: "github", url: "https://github.com/TheAmanM/"}
+      { platform: "github", url: "https://github.com/TheAmanM/"},
+      { platform: "web", url: "https://amanmeherally.com"}
     ],
   },
   {
@@ -58,7 +59,7 @@ const defaultMembers: TeamMember[] = [
 
     location: "Toronto, ON",
     socialLinks: [
-      { platform: "github", url: "https://github.com" },
+      { platform: "github", url: "https://github.com/Hala06" },
       { platform: "linkedin", url: "https://www.linkedin.com/in/006hala-alshareef/" },
     ],
   },
