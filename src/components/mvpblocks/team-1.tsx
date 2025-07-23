@@ -34,9 +34,9 @@ const defaultMembers: TeamMember[] = [
     imageUrl: ahmed.src,
     location: "Toronto, ON",
     socialLinks: [
-      { platform: "twitter", url: "https://twitter.com" },
-      { platform: "github", url: "https://github.com" },
-      { platform: "linkedin", url: "https://linkedin.com" },
+      { platform: "github", url: "https://www.linkedin.com/in/ahmed-abduljader/" },
+      { platform: "linkedin", url: "https://www.linkedin.com/in/ahmed-abduljader/" },
+      { platform: "web", url: "https://www.ahmedabduljader.com"}
     ],
   },
   {
@@ -46,8 +46,8 @@ const defaultMembers: TeamMember[] = [
     imageUrl: aman.src,
     location: "Toronto, ON",
     socialLinks: [
-      { platform: "twitter", url: "https://twitter.com" },
-      { platform: "linkedin", url: "https://linkedin.com" },
+      { platform: "linkedin", url: "https://www.linkedin.com/in/aman-meherally/" },
+      { platform: "github", url: "https://github.com/TheAmanM/"}
     ],
   },
   {
@@ -59,7 +59,7 @@ const defaultMembers: TeamMember[] = [
     location: "Toronto, ON",
     socialLinks: [
       { platform: "github", url: "https://github.com" },
-      { platform: "linkedin", url: "https://linkedin.com" },
+      { platform: "linkedin", url: "https://www.linkedin.com/in/006hala-alshareef/" },
     ],
   },
   {
