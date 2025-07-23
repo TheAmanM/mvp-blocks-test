@@ -1,7 +1,7 @@
 "use client";
 // changes on line 109
 import { cn } from "@/lib/utils";
-import { GithubIcon, LinkedinIcon, TwitterIcon } from "lucide-react";
+import { GithubIcon, LinkedinIcon, TwitterIcon, Globe } from "lucide-react";
 import Link from "next/link";
 
 import ahmed from "@/assets/ahmed.jpeg";
@@ -15,7 +15,7 @@ interface TeamMember {
   bio: string;
   imageUrl: string;
   location?: string;
-  socialLinks?: { platform: "github" | "twitter" | "linkedin"; url: string }[];
+  socialLinks?: { platform: "github" | "twitter" | "linkedin" | "web"; url: string }[];
 }
 
 interface TeamProps {
@@ -65,12 +65,13 @@ const defaultMembers: TeamMember[] = [
   {
     name: "Mahad Hasan",
     role: "Product Manager",
-    bio: "Strategic thinker with a track record of launching successful products that users love and businesses value. ",
+    bio: "Software Engineering student with experience in backend microservices, full-stack web/mobile development, and cybersecurity, delivering scalable solutions and recognized in national competitions. ",
     imageUrl: mahad.src,
-    location: "Toronto, ON",
+    location: "Burlington, ON",
     socialLinks: [
-      { platform: "twitter", url: "https://twitter.com" },
-      { platform: "linkedin", url: "https://linkedin.com" },
+      { platform: "github", url: "https://github.com/mahadhsn"},
+      { platform: "linkedin", url: "https://www.linkedin.com/in/mahad-hassan/" },
+      { platform: "web", url: "https://www.mahadhssn.com"}
     ],
   },
 ];
@@ -153,6 +154,9 @@ function TeamMemberCard({ member }: { member: TeamMember }) {
                   )}
                   {link.platform === "linkedin" && (
                     <LinkedinIcon className="h-4 w-4" />
+                  )}
+                  {link.platform == "web" && (
+                    <Globe className="h-4 w-4" />
                   )}
                 </Link>
               ))}
